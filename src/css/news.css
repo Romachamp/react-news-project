@@ -1,0 +1,29 @@
+.loading {
+    /*margin-top: 200px;*/
+}
+
+.loading svg {
+    animation-name: rotation;
+    /*animation-play-state: paused;*/
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    font-size: 50px;
+    margin-right: 50%;
+}
+
+.loading.none {
+    display: none;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.news-container {
+}

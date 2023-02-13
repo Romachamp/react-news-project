@@ -1,0 +1,53 @@
+.nav-bar {
+    width: 400px;
+}
+
+.nav-menu {
+    margin-left: 100px;
+    padding: 20px;
+    position: relative;
+    height: 100%;
+}
+
+.nav-menu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.nav-list li .icon svg {
+    width: 40px;
+    height: 30px;
+    transform: rotate(-90deg);
+    color: #5255b5;
+}
+
+.nav-list li {
+    transition: 0.3s;
+}
+
+.nav-list li:hover {
+    margin-left: 10px;
+}
+
+.nav-link {
+    color: #767dff;
+    font-size: 23px;
+}
+
+.nav-link::first-letter {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.nav-link::after {
+    top: 30px;
+}
+
+.nav-link:hover::after {
+    background: #767dff;
+}
